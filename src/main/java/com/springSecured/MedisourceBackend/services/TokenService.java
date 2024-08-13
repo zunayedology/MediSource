@@ -36,7 +36,7 @@ public class TokenService {
             .issuedAt(now)
             .subject(auth.getName())
             .claim("roles", scope)
-             .claim("email", emails)
+            .claim("email", emails)
             .build();
 
         return jwtEncoder.encode(JwtEncoderParameters.from(claims)).getTokenValue();
