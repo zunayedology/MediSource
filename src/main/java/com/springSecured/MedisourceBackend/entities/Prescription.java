@@ -27,15 +27,15 @@ public class Prescription {
     @Column(nullable = false)
     private String remarks;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "fk_hospital_id", nullable = false)
     private Hospital hospital;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "fk_patient_id",nullable = false)
     private  Patient patient;
 
-    @OneToMany
+    @ManyToOne
     @JoinColumn(name = "fk_doctor_id",nullable = false)
     private  Doctor doctor;
 
