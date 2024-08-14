@@ -30,5 +30,4 @@ public class Prescribedmedicine {
     @JoinColumn(name = "fk_prescription_id", nullable = false)
     private Prescription prescription;
 
-
 }

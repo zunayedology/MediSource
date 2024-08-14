@@ -12,8 +12,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="testResults")
-public class TestResults {
+@Table(name="testResult")
+public class TestResult {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long testres_id;
@@ -29,6 +29,5 @@ public class TestResults {
     @ManyToOne
     @JoinColumn(name = "fk_hospital_id")
     private Hospital hospital;
-
 
 }
