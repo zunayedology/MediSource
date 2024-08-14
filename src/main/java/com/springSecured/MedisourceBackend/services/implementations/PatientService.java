@@ -21,8 +21,8 @@ import java.util.Set;
 @Transactional
 public class PatientService implements PatientServices {
 
-    @Autowired
-    private RegisterResponse registerResponse;
+//    @Autowired
+//    private RegisterResponse registerResponse;
 
     @Autowired
     private UserRepository userRepository;
