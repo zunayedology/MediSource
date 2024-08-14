@@ -29,5 +29,4 @@ public class TestResult {
     @ManyToOne
     @JoinColumn(name = "fk_hospital_id")
     private Hospital hospital;
-
 }
