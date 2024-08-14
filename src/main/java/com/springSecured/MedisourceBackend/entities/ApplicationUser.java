@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+
 @Getter
 @Setter
 @Entity
@@ -39,7 +40,11 @@ public class ApplicationUser implements UserDetails{
 	}
 
 
-	public ApplicationUser(Integer userId, String username,String email, String password, Set<Role> authorities) {
+	public ApplicationUser(Integer userId,
+						   String username,
+						   String email,
+						   String password,
+						   Set<Role> authorities) {
 		super();
 		this.userId = userId;
 		this.username = username;
@@ -71,7 +76,7 @@ public class ApplicationUser implements UserDetails{
 		// TODO Auto-generated method stub
 		return this.password;
 	}
-	
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
@@ -81,11 +86,11 @@ public class ApplicationUser implements UserDetails{
 		// TODO Auto-generated method stub
 		return this.username;
 	}
-	
+
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	
+
 	/* If you want account locking capabilities create variables and ways to set them for the methods below */
 	@Override
 	public boolean isAccountNonExpired() {
@@ -118,5 +123,5 @@ public class ApplicationUser implements UserDetails{
 	public void setEmail(String email) {
 		this.email = email;
 	}
-    
+
 }
