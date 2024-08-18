@@ -19,6 +19,6 @@ public class Test {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long test_id;
 
-    @Column(nullable = false,unique = true)
+    @Column(nullable = false, unique = true)
     private String testName;
 }

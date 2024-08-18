@@ -35,4 +35,6 @@ public class Doctor {
 
     @Column(nullable = false)
     private String doctorPassword;  // Renamed from password to doctorPassword
+
+    private boolean verified = false;   // Unverified by default
 }

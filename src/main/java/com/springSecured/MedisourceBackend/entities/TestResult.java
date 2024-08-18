@@ -16,17 +16,16 @@ import lombok.Setter;
 public class TestResult {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long testres_id;
+    private Long test_result_id;
 
     @ManyToOne
-    @JoinColumn(name = "fk_test_id")
+    @JoinColumn(name = "fk_test_id", nullable = false)
     private Test test;
 
     @ManyToOne
-    @JoinColumn(name = "fk_prescription_id")
+    @JoinColumn(name = "fk_prescription_id", nullable = false)
     private Prescription prescription;
 
-    @ManyToOne
-    @JoinColumn(name = "fk_hospital_id")
-    private Hospital hospital;
+    @Column
+    private String result;
 }
