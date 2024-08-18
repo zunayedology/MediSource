@@ -1,6 +1,6 @@
 package com.springSecured.MedisourceBackend.services;
 
-import com.springSecured.MedisourceBackend.dto.RegisterResponse;
+
 import com.springSecured.MedisourceBackend.dto.RegistrationDTO;
 import com.springSecured.MedisourceBackend.entities.ApplicationUser;
 import com.springSecured.MedisourceBackend.dto.LoginResponseDTO;
@@ -8,6 +8,7 @@ import com.springSecured.MedisourceBackend.entities.Role;
 import com.springSecured.MedisourceBackend.repository.RoleRepository;
 import com.springSecured.MedisourceBackend.repository.UserRepository;
 
+import com.springSecured.MedisourceBackend.response.RegisterResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

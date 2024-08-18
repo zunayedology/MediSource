@@ -35,5 +35,7 @@ public class Manager {
     @JoinColumn(name = "fk_hospital_id", nullable = false)
     private Hospital hospital;
 
+
     private boolean verified = false;
+
 }
