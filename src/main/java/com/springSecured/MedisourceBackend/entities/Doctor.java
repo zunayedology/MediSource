@@ -36,5 +36,6 @@ public class Doctor {
     @Column(nullable = false)
     private String doctorPassword;  // Renamed from password to doctorPassword
 
+    @Column
     private boolean verified=false;
 }
