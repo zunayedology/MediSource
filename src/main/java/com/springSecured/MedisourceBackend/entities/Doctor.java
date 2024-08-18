@@ -38,4 +38,5 @@ public class Doctor {
 
     @Column
     private boolean verified=false;
+
 }

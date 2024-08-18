@@ -26,7 +26,7 @@ public class Patient {
     private String patientBirthdate;
 
     @Column(nullable = false, unique = true)
-    private String patientNationalid;
+    private String patientNationalId;
 
     @Column(nullable = false)
     private String patientAddress;

@@ -13,7 +13,7 @@ public class PatientDTO {
 
     private String patientName;
     private String patientBirthdate;
-    private String patientNationalid;
+    private String patientNationalId;
     private String patientAddress;
     private String patientPhone;
     private String patientPassword;

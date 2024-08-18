@@ -36,6 +36,8 @@ public class Manager {
     private Hospital hospital;
 
 
+
     @Column
     private boolean verified=false;
+
 }
