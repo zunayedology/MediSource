@@ -49,7 +49,7 @@ public class PatientService implements PatientServices {
                 patient.setPatientAddress(body.getPatientAddress());
                 patient.setPatientBirthdate(body.getPatientBirthdate());
                 patient.setPatientName(body.getPatientName());
-                patient.setPatientNationalId(body.getPatientNationalId());
+                patient.setPatientNationalid(body.getPatientNationalId());
                 patient.setPatinetPhone(body.getPatientPhone());
                 patient.setPatientPassword(body.getPatientPassword());
 
