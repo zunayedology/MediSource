@@ -43,7 +43,7 @@ public class AuthenticationController {
 
     @PostMapping("/register-patient")
     public RegisterResponse registerPatients(@RequestBody PatientDTO body){
-        System.out.println(body.getPatientNationalid());
+        System.out.println(body.getPatientNationalId());
         return patientService.registerPatient(body);
     }
 }   
