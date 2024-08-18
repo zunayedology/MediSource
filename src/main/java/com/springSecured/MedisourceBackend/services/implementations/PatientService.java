@@ -37,7 +37,7 @@ public class PatientService implements PatientServices {
         RegisterResponse registerResponse =new RegisterResponse();
 
         try{
-            if(userRepository.existsByEmail(body.getPatientNationalId())){
+            if(userRepository.existsByEmail(body.getPatientNationalid())){
 //          //  throw new UserAlreadyExistsException(email + " already exists");
                 registerResponse.setMessage("exist");
 
@@ -49,14 +49,14 @@ public class PatientService implements PatientServices {
                 patient.setPatientAddress(body.getPatientAddress());
                 patient.setPatientBirthdate(body.getPatientBirthdate());
                 patient.setPatientName(body.getPatientName());
-                patient.setPatientNationalid(body.getPatientNationalId());
+                patient.setPatientNationalid(body.getPatientNationalid());
                 patient.setPatinetPhone(body.getPatientPhone());
                 patient.setPatientPassword(body.getPatientPassword());
 
                 Patient temp_patient= patientRepository.save(patient);
 
 
-                String email_add = body.getPatientNationalId();
+                String email_add = body.getPatientNationalid();
                 String userName = body.getPatientPhone();
 
 
@@ -68,7 +68,7 @@ public class PatientService implements PatientServices {
                 authorities.add(userRole);
                 ApplicationUser user=new ApplicationUser();
                 user.setUsername(userName);
-                user.setEmail(body.getPatientNationalId());
+                user.setEmail(body.getPatientNationalid());
                 user.setPassword(encodedPassword);
                 user.setAuthorities(authorities);
                 ApplicationUser temp_user=userRepository.save(user);
