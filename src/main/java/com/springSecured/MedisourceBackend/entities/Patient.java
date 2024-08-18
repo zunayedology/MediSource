@@ -36,4 +36,7 @@ public class Patient {
 
     @Column(nullable = false)
     private String patientPassword;
+
+    @Column
+    private boolean verified=false;
 }
